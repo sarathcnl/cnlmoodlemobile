@@ -65,10 +65,10 @@
             MM.deviceReady = true;
             // Store the device locale for further uses.
             navigator.globalization.getLocaleName(
-                /*function (locale) {
-                    MM.lang.locale = locale.value;
-                    MM.log("Device locale loaded: " + locale.value);
-                },*/
+                function (locale) {
+                    /*MM.lang.locale = locale.value;
+                    MM.log("Device locale loaded: " + locale.value);*/
+                },
                 function () {}
             );
             // Disable the back button, exists the app.
